@@ -1,0 +1,184 @@
+<!doctype html><html lang=pt dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Colocando no ar #  Para colocar o GitFichas no ar, eu segui os passos que eu sempre sigo. Se você quiser entender mais detalhes desse passo a passo, tem um tutorial pra você aqui. Aqui vou falar sobre outros detalhes que não cubro no tutorial.
+Para começar o código do GitFichas é privado. Isso quer dizer que a única pessoa que tem acesso a ele sou eu.
+O projeto é privado #  Hoje, não tem nenhum motivo particular para isso, mas ao colocar o projeto no ar, minha ideia inicial era liberar uma ou duas fichas por semana.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Colocando no ar">
+<meta property="og:description" content="Colocando no ar #  Para colocar o GitFichas no ar, eu segui os passos que eu sempre sigo. Se você quiser entender mais detalhes desse passo a passo, tem um tutorial pra você aqui. Aqui vou falar sobre outros detalhes que não cubro no tutorial.
+Para começar o código do GitFichas é privado. Isso quer dizer que a única pessoa que tem acesso a ele sou eu.
+O projeto é privado #  Hoje, não tem nenhum motivo particular para isso, mas ao colocar o projeto no ar, minha ideia inicial era liberar uma ou duas fichas por semana.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jtemporal.com/dev-diaries/pt/docs/gitfichas/colocando-no-ar/"><meta property="article:section" content="docs">
+<title>Colocando no ar | Dev Diaries</title>
+<link rel=manifest href=/dev-diaries/manifest.json>
+<link rel=icon href=/dev-diaries/favicon.png type=image/x-icon>
+<link rel=alternate hreflang=pt href=https://jtemporal.com/dev-diaries/docs/gitfichas/colocando-no-ar/ title="Getting it online">
+<link rel=stylesheet href=/dev-diaries/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/dev-diaries/flexsearch.min.js></script>
+<script defer src=/dev-diaries/pt.search.min.3e0af38aacba41ea514c9620d520bffab949792db0ec49f791b2d3b73176a2e8.js integrity="sha256-Pgrziqy6QepRTJYg1SC/+rlJeS2w7En3kbLTtzF2oug=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/dev-diaries/pt/><span>Dev Diaries</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Buscar aria-label=Buscar maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/dev-diaries/svg/translate.svg class=book-icon alt=Languages>
+Português
+</a>
+</label>
+<ul>
+<li>
+<a href=https://jtemporal.com/dev-diaries/docs/gitfichas/colocando-no-ar/>
+English
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class=book-section-flat>
+<a href=/dev-diaries/pt/docs/gitfichas/>GitFichas</a>
+<ul>
+<li>
+<a href=/dev-diaries/pt/docs/gitfichas/escolha-de-um-tema/>Escolha de um tema</a>
+</li>
+<li>
+<a href=/dev-diaries/pt/docs/gitfichas/colocando-no-ar/ class=active>Colocando no ar</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://jtemporal.com/ target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://gitfichas.com/ target=_blank rel=noopener>
+GitFichas
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/dev-diaries/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Colocando no ar</strong>
+<label for=toc-control>
+<img src=/dev-diaries/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#o-projeto-é-privado>O projeto é privado</a></li>
+<li><a href=#tô-usando-netlify>Tô usando Netlify</a></li>
+<li><a href=#acesso-à-um-repositório-específico>Acesso à um repositório específico</a></li>
+<li><a href=#domínio>Domínio</a></li>
+<li><a href=#anúncio-oficial>Anúncio oficial</a></li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=colocando-no-ar>
+Colocando no ar
+<a class=anchor href=#colocando-no-ar>#</a>
+</h1>
+<p>Para colocar o GitFichas no ar, eu segui os passos que eu sempre sigo. Se você quiser entender mais detalhes desse passo a passo, <a href=https://jtemporal.com/do-tema-ao-ar/>tem um tutorial pra você aqui</a>. Aqui vou falar sobre outros detalhes que não cubro no tutorial.</p>
+<p>Para começar o código do GitFichas é privado. Isso quer dizer que a única pessoa que tem acesso a ele sou eu.</p>
+<h2 id=o-projeto-é-privado>
+O projeto é privado
+<a class=anchor href=#o-projeto-%c3%a9-privado>#</a>
+</h2>
+<p>Hoje, não tem nenhum motivo particular para isso, mas ao colocar o projeto no ar, minha ideia inicial era liberar uma ou duas fichas por semana. Para fazer isso, já que eu não tenho um CMS ligado no GitFichas, eu deixava os pull requests pré-prontos apenas para fazer o merge na data indicada. Assim, manter o código privado ia impedir de pessoas espiarem as fichas que iam sair.</p>
+<h2 id=tô-usando-netlify>
+Tô usando Netlify
+<a class=anchor href=#t%c3%b4-usando-netlify>#</a>
+</h2>
+<p>Além disso, eu aproveitei o GitFichas para finalmente aprender a usar o <a href=https://www.netlify.com>Netlify</a>. Esse serviço integra com o GitHub de uma forma tão linda que a configuração dele foi suuuuper intuitiva:</p>
+<ol>
+<li>fiz a minha conta por lá;</li>
+<li>associei a minha conta do GitHub com a conta do Netlify;</li>
+<li>dei acesso ao Netlify para encontrar <em>apenas</em> o repositório do GitFichas (isso aqui me impressionou, já falo mais sobre);</li>
+<li>esperei o primeiro build rolar (o primeiro sempre demora um tiquinho mais), e pronto.</li>
+</ol>
+<p>Eu achei que ia ser mais complicado confesso, e talvez seja, se a configuração do seu site for mais complexa ou se você usar o Netlify para outras coisas como servir o site e afins. Como o meu site é servido pelo GitHub eu não precisei me preocupar com <em>mais nada</em>.</p>
+<p>Depois disso, para cada novo pull request aberto, o bot do Netlify aparece para mostrar essa mensagem:</p>
+<p><img src=https://res.cloudinary.com/jesstemporal/image/upload/v1645814794/dev-diaries/netlify-message-on-pull-request_hgext1.png alt="Mensagem do Netlify em um pull request aberto"></p>
+<p>Essa mensagem é atualizada para cada commit que for feito o push para o GitHub. Para mim, que muitas vezes ajusto coisas do GitFichas pelo iPad, essa capacidade de pré-visualizar o site sem precisar rodar ele localmente é de grande ajuda.</p>
+<h2 id=acesso-à-um-repositório-específico>
+Acesso à um repositório específico
+<a class=anchor href=#acesso-%c3%a0-um-reposit%c3%b3rio-espec%c3%adfico>#</a>
+</h2>
+<p>Voltando ao assunto que me impressionou: acesso para encontrar <em>apenas</em> um repositório.</p>
+<p>No trabalho eu uso o mesmo perfil do GitHub que uso para os meus projetos pessoais. Por causa disso, eu fico 3x mais atenta a quais serviços tem acesso aos dados do meu perfil.</p>
+<p>O fato de poder controlar tão detalhadamente quais repositórios o serviço tem acesso me impressionou pois normalmente não é isso que acontece.</p>
+<p>Por exemplo, o Heroku consegue listar todos os repositórios da minha conta, para ser justa, ele não tem acesso as organizações a não ser que eu peça isso, mas ainda assim, o Netlify dá um passo além.</p>
+<h2 id=domínio>
+Domínio
+<a class=anchor href=#dom%c3%adnio>#</a>
+</h2>
+<p>Pra finalizar eu comprei um domínio novo no Namecheap e configurei ele no GitHub.</p>
+<p>É pelo namecheap que eu compro e gerencio todos meus domínios, eu acho ele fácil de usar e configurar. Por exemplo, o GitFichas tem dois domínios principais:</p>
+<ul>
+<li><a href=https://gitfichas.com>https://gitfichas.com</a> que mostra a página em português;</li>
+<li><a href=http://gitstudycards.com>https://gitstudycards.com</a> que redireciona para a página em inglês do projeto.</li>
+</ul>
+<p>Esse redirecionamento eu faço direto pelo site do Namecheap sem precisar de mais nada. É muito prático.</p>
+<h2 id=anúncio-oficial>
+Anúncio oficial
+<a class=anchor href=#an%c3%bancio-oficial>#</a>
+</h2>
+<p>Com o domínio no ar e as primeiras fichas publicadas eu fiz o que eu mais gosto de fazer e <a href=https://jtemporal.com/conheca-o-gitfichas/>escrevi um artigo no meu blog para contar que o projeto nasceu</a>. Basicamente pra contar a proposta do projeto, mostrar a carinha de uma ficha e deixar quem acompanha o meu trabalho a par da novidade.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#o-projeto-é-privado>O projeto é privado</a></li>
+<li><a href=#tô-usando-netlify>Tô usando Netlify</a></li>
+<li><a href=#acesso-à-um-repositório-específico>Acesso à um repositório específico</a></li>
+<li><a href=#domínio>Domínio</a></li>
+<li><a href=#anúncio-oficial>Anúncio oficial</a></li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
