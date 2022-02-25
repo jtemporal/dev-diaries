@@ -1,4 +1,4 @@
-baseURL = 'https://jtemporal.com/dev-diaries'
+baseURL = 'https://jtemporal.github.io/dev-diaries'
 languageCode = 'pt'
 title = 'Dev Diaries'
 theme = 'hugo-book'
