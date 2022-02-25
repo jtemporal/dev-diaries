@@ -1,0 +1,14 @@
+baseURL = 'https://jtemporal.com/dev-diaries'
+languageCode = 'pt'
+title = 'Dev Diaries'
+
+defaultContentLanguage = 'pt'
+[languages]
+  [languages.pt]
+    contentDir = 'content'
+    languageName = 'Português'
+    weight = 10
+  [languages.en]
+    contentDir = 'content.en'
+    languageName = 'English'
+    weight = 10
