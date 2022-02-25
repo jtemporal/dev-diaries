@@ -1,6 +1,7 @@
 baseURL = 'https://jtemporal.com/dev-diaries'
 languageCode = 'pt'
 title = 'Dev Diaries'
+theme = 'hugo-book'
 
 defaultContentLanguage = 'pt'
 [languages]
