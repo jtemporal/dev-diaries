@@ -3,6 +3,10 @@ languageCode = 'pt'
 title = 'Dev Diaries'
 theme = 'hugo-book'
 
+[params]
+  author = 'Jessica Temporal'
+  description = 'Diary of my adventure developing things'
+
 [menu]
 [[menu.after]]
   name = 'Blog'
