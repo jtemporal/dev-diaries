@@ -1,0 +1,167 @@
+<!doctype html><html lang=pt dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="GitFichas #  Hello! If you just arrived here, I welcome you out of the bottom of my heart! Here you&rsquo;ll find the notes and thoughts around my process for developing the GitFichas website.
+This diary isn&rsquo;t a diary #  A little disclaimer before we start: Even though this page is called &ldquo;diary&rdquo; it will not be updated daily. That is because this project is only worked on my free time, that is, during weekends and holidays.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="GitFichas">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jtemporal.github.io/dev-diaries/en/docs/gitfichas/">
+<title>GitFichas | Dev Diaries</title>
+<link rel=manifest href=/dev-diaries/manifest.json>
+<link rel=icon href=/dev-diaries/favicon.png type=image/x-icon>
+<link rel=alternate hreflang=pt href=https://jtemporal.github.io/dev-diaries/docs/gitfichas/ title=GitFichas>
+<link rel=stylesheet href=/dev-diaries/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/dev-diaries/flexsearch.min.js></script>
+<script defer src=/dev-diaries/en.search.min.f6c75e65f360d85dee2f6f65ab145b2ae0a064d69b3294875d449ded2e084bcf.js integrity="sha256-9sdeZfNg2F3uL29lqxRbKuCgZNabMpSHXUSd7S4IS88=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://jtemporal.github.io/dev-diaries/en/docs/gitfichas/index.xml title="Dev Diaries">
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/dev-diaries/en/><span>Dev Diaries</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/dev-diaries/svg/translate.svg class=book-icon alt=Languages>
+English
+</a>
+</label>
+<ul>
+<li>
+<a href=https://jtemporal.github.io/dev-diaries/docs/gitfichas/>
+Português
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class=book-section-flat>
+<a href=/dev-diaries/en/docs/gitfichas/ class=active>GitFichas</a>
+<ul>
+<li>
+<a href=/dev-diaries/en/docs/gitfichas/escolha-de-um-tema/>Choosing a theme</a>
+</li>
+<li>
+<a href=/dev-diaries/en/docs/gitfichas/colocando-no-ar/>Getting it online</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/dev-diaries/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>GitFichas</strong>
+<label for=toc-control>
+<img src=/dev-diaries/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#this-diary-isnt-a-diary>This diary isn&rsquo;t a diary</a></li>
+<li><a href=#how-i-do-i-work-on-gitfichas>How I do I work on GitFichas</a></li>
+<li><a href=#a-little-bit-of-history>A little bit of history</a>
+<ul>
+<li><a href=#how-was-gitfichas-born>How was GitFichas born</a></li>
+<li><a href=#how-each-card-is-made>How each card is made?</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><h1 id=gitfichas>
+GitFichas
+<a class=anchor href=#gitfichas>#</a>
+</h1>
+<p>Hello! If you just arrived here, I welcome you out of the bottom of my heart! Here you&rsquo;ll find the notes and thoughts around my process for developing the GitFichas website.</p>
+<h2 id=this-diary-isnt-a-diary>
+This diary isn&rsquo;t a diary
+<a class=anchor href=#this-diary-isnt-a-diary>#</a>
+</h2>
+<p>A little disclaimer before we start: Even though this page is called &ldquo;diary&rdquo; it will <strong>not</strong> be updated daily. That is because this project is only worked on my free time, that is, during weekends and holidays.</p>
+<p>It also worth mentioning that differently from the articles you <a href=https://jtemporal.com/en>usually find in my blog</a> that aim to teach someone something most of the time, the goal of this page is to document the development process of GitFichas. Are you going to learn if you read this pages? Probably, yes, but the objective is to show what was done more than teaching, to expose the way I think. Show step-by-step the processes and thinking, even more the anything else document my own learnings.</p>
+<p>I hope though that the info contained here will help you in any way. And that, by following along with this temporal sequence of steps you may know what to do if you ever start your project, and preferably de without making the mistakes I did.</p>
+<h2 id=how-i-do-i-work-on-gitfichas>
+How I do I work on GitFichas
+<a class=anchor href=#how-i-do-i-work-on-gitfichas>#</a>
+</h2>
+<p>Eu tenho um tempo limitado para trabalhar no GitFichas, ele é, literalmente, um projeto de final de semana. Então toda novidade e alteração que você vê por aqui ocorre em vários dias.</p>
+<p>Eu tento separar as atividades e ajustes para que eles precisem de no máximo um dia e meio de trabalho. Assim eu posso trabalhar no GitFichas no sábado e descansar no domingo, para começar a semana de trabalho na segunda sem estar cansada.</p>
+<h2 id=a-little-bit-of-history>
+A little bit of history
+<a class=anchor href=#a-little-bit-of-history>#</a>
+</h2>
+<h3 id=how-was-gitfichas-born>
+How was GitFichas born
+<a class=anchor href=#how-was-gitfichas-born>#</a>
+</h3>
+<p>Eu tenho preparado alguns conteúdos de Git que eu ainda não estou pronta para compartilhar, vai ser um material num formato mais longo então eu tenho precisado de mais tempo entre preparar, revisar e publicar. Por causa disso, um incômodo começou a aparecer em mim.</p>
+<p>Esse incômodo pode ser resumido em: <em>“Eu to fazendo esse material para ajudar pessoas, mas ele ainda não está pronto, e a parte que está pronta, está simplesmente sentado no meu computador e não está ajudando ninguém”</em>. Por causa disso eu tentei achar um espaço intermediário onde eu consiga publicar parte do conteúdo que está pronto e ajudar pessoas com as suas dúvidas.</p>
+<p>Comecei a pensar sobre como viabilizar nisso, nessa mesma época eu estava brincando de aprender a desenhar e aprender a fazer <em>lettering</em> no iPad. Nessa mesma época <a href=https://twitter.com/chrisalbon>Chris Albon</a> e <a href=https://twitter.com/b0rk>Julia Evans</a> — siga ambos, ótimas referências para acompanhar — passaram pela minha timeline no twitter postando um <a href=https://machinelearningflashcards.com>Machine Learning Flashcard</a> e um <a href=https://wizardzines.com>Zine</a> respectivamente, e aí algo clicou na minha cabeça, talvez eu possa fazer algo parecido só que para Git. E aí o trabalho começou.</p>
+<h3 id=how-each-card-is-made>
+How each card is made?
+<a class=anchor href=#how-each-card-is-made>#</a>
+</h3>
+<p>Cada ficha é desenhada manualmente. Sim você leu certo, desenhada. Deixe-me explicar melhor.</p>
+<p>Para cada ficha eu sigo o mesmo conjunto de passos:</p>
+<ol>
+<li><em>Escolha do comando:</em> eu escolho o comando que vai ser abordado com base em perguntas que faço no twitter, ou o comando que eu usei na semana e achei legal, ou até mesmo pedidos de ajuda que recebo por aí;</li>
+<li><em>Planejamento do conteúdo:</em> eu escrevo o rascunho do conteúdo de cada ficha no meu bloco de notas, os rascunhos contém o comando, o título da ficha, e a lista de descrições de cada parte que compõe esse comando, depois eu traduzo tudo para inglês;</li>
+<li><em>Criação da ficha:</em> só quando eu tenho todas as informações que eu quero colocar na ficha eu faço o desenho, para isso eu uso o Procreate, desenho o comando, escrevo as descrições, os títulos e exporto a imagem em ambos idiomas.</li>
+</ol>
+<p>Com isso temos uma ficha, para finalizar eu gero o post da ficha, e publico elas usando os procedimentos descritos nas páginas desse diário.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#this-diary-isnt-a-diary>This diary isn&rsquo;t a diary</a></li>
+<li><a href=#how-i-do-i-work-on-gitfichas>How I do I work on GitFichas</a></li>
+<li><a href=#a-little-bit-of-history>A little bit of history</a>
+<ul>
+<li><a href=#how-was-gitfichas-born>How was GitFichas born</a></li>
+<li><a href=#how-each-card-is-made>How each card is made?</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
