@@ -1,7 +1,7 @@
 ---
 weight: 1
-bookFlatSection: true
-title: "GitFichas"
+bookFlatSection: false
+title: "GitFichas Development"
 ---
 
 # GitFichas
