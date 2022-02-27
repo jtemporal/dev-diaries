@@ -40,7 +40,7 @@ For each card I follow the same set of steps:
 
 1. *Choosing a command:* I chose which command I want to approach some times based on the questions I make or receive on Twitter, or even yet, I take note of some command I used during the week and that I thought was cool;
 2. *Content planning:* Then I write the draft of the content that goes into the card on my notes app. These drafts contain everything that goes into a card: the title, the command, and the descriptions of each part of the command. I usually write it in Portuguese and then I adapt it into English;
-3. *Card creation:* Only when I have all the information I want to put into a card I draw the card. I use Procreate as my drawing app, I draw the command then I write the notes describing each part of the command then the titles and I export the image in both languages, para isso eu uso o Procreate, desenho o comando, escrevo as descrições, os títulos e exporto a imagem em ambos idiomas.
+3. *Card creation:* Only when I have all the information I want to put into a card I draw the card. I use Procreate as my drawing app, I draw the command then I write the notes describing each part of the command then the titles and I export the image in both languages.
 
 Here's what a timelapse of a card being made looks like:
 
