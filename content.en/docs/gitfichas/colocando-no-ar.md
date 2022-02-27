@@ -9,7 +9,11 @@ To the GitFichas online I followed the same steps I usually do for getting pages
 
 ## The project is private
 
-Coming soon in English.
+To start, GitFichas is private project, by that I mean, the only person that has access to its source code is me.
+
+Today, there isn't a particular reason for that, but while I was developing it, my idea was to release one or two cards per week only. And to do that, since I didn't have a CMS attached to the code, I would leave the pull requests ready only to merge them on the date I wanted to publish the cards. This way maintaining the code private would have that surprise factor attached to each card.
+
+Today the scheduling of cards no longer holds true, but I'm still not ready to make it open source.
 
 ## I'm using Netlify
 
