@@ -32,6 +32,16 @@ Getting the content live fast has its benefits:
 
 It is also worth mentioning that these two benefits don't even touch things like creating a portfólio and learning new skills which are also very welcomed.
 
-## A stack do GitFichas
+## GitFichas stack
 
-Coming soon in English.
+I also like to rely on structures that are have a low investment of time to maintain and that's why tend to chose things like GitHub Pages and Jekyll, that allow me to put a page online in a matter of minutes a lot of times even without have to run anything locally. I also used Netlify for the first time.
+
+I long time ago I wrote a tutorial that [teaches step-by-step how to get a website live using Jekyll and Github Pages](https://jtemporal.com/publishing-a-website-with-jekyll/) in case you want to try that for yourself.
+
+Since I know these two tools, GitHub Pages and Jekyll really well I tend to use it a lot. They have a well established community that use both of them and good docs I can rely on. Last but no least there's also a lot of things ready you can reuse.
+
+For example if [you access my blog](https://jtemporal.com/en), [GitFichas](http://gitfichas.com/en?utm_source=devdiaries) or even [Pizza de Dados podcast website](https://pizzadedados.com/en), you may be surprised to know that all of them are live using Jekyll and GitHub Pages. Also, all of them use themes that were adapted to implement features that were required.
+
+In GitFichas case I needed a theme there were focused on images, so after browsing through library of Jekyll themes, I found [this portfolio theme](https://lenpaul.github.io/portfolio-jekyll-theme/) that seemed to be what I needed. In case you want to understand how I pick themes [you can checkout this other blog post](https://jtemporal.com/choosing-a-jekyll-theme/).
+
+The chosen theme has its particularities, but with the choice made, next step was get everything online.
