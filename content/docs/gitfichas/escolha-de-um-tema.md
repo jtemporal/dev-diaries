@@ -34,7 +34,7 @@ E vale mencionar que esses dois benefícios nem entram no mérito de criação d
 
 ## A stack do GitFichas
 
-Eu também gosto de confiar em estruturas que me deem pouco trabalho para manutenção, por isso eu tendo a usar coisas como GitHub Pages e Jekyll, que me permitem colocar uma página no ar em questão de minutos. Ainda mais, essa foi a primeira vez que eu usei Netlify num dos sites que mantenho.
+Eu também gosto de confiar em estruturas que me deem pouco trabalho para manutenção, por isso eu tendo a usar coisas como GitHub Pages e Jekyll, que me permitem colocar uma página no ar em questão de minutos muitas vezes sem precisar rodar nada minha máquina. Ainda mais, essa foi a primeira vez que eu usei Netlify num dos sites que mantenho.
 
 Eu já escrevi um tutorial completão sobre [como colocar uma página no ar usando tanto GitHub Pages quanto Jekyll](https://jtemporal.com/do-tema-ao-ar/) caso você tenha curiosidade.
 
