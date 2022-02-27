@@ -42,4 +42,8 @@ Para cada ficha eu sigo o mesmo conjunto de passos:
 2. *Planejamento do conteúdo:* eu escrevo o rascunho do conteúdo de cada ficha no meu bloco de notas, os rascunhos contém o comando, o título da ficha, e a lista de descrições de cada parte que compõe esse comando, depois eu traduzo tudo para inglês;
 3. *Criação da ficha:* só quando eu tenho todas as informações que eu quero colocar na ficha eu faço o desenho, para isso eu uso o Procreate, desenho o comando, escrevo as descrições, os títulos e exporto a imagem em ambos idiomas.
 
+Aqui tem uma *timelapse* de um card sendo preparado:
+
+![Timelapse da ficha 46 sendo preparada](https://res.cloudinary.com/jesstemporal/video/upload/v1645974330/dev-diaries/046_cckst9.mp4)
+
 Com isso temos uma ficha, para finalizar eu gero o post da ficha, e publico elas usando os procedimentos descritos nas páginas desse diário.

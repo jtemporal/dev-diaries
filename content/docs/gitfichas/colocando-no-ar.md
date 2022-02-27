@@ -8,9 +8,9 @@ title: "Colocando no ar"
 
 Para colocar o GitFichas no ar, eu segui os passos que eu sempre sigo. Se você quiser entender mais detalhes desse passo a passo, [tem um tutorial pra você aqui](https://jtemporal.com/do-tema-ao-ar/). Aqui vou falar sobre outros detalhes que não cubro no tutorial.
 
-Para começar o código do GitFichas é privado. Isso quer dizer que a única pessoa que tem acesso a ele sou eu.
-
 ## O projeto é privado
+
+Para começar o código do GitFichas é privado. Isso quer dizer que a única pessoa que tem acesso a ele sou eu.
 
 Hoje, não tem nenhum motivo particular para isso, mas ao colocar o projeto no ar, minha ideia inicial era liberar uma ou duas fichas por semana. Para fazer isso, já que eu não tenho um CMS ligado no GitFichas, eu deixava os pull requests pré-prontos apenas para fazer o merge na data indicada. Assim, manter o código privado ia impedir de pessoas espiarem as fichas que iam sair.
 

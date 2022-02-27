@@ -26,8 +26,24 @@ I try my best to separate the activities I need to make and the adjustments so t
 
 ### How was GitFichas born
 
-Coming soon in English.
+I'm preparing some longer content about Git that I'm not ready to share yet, since it is longer it requires more time of me to prepare, review and publish it. Out of this need for more preparation time a "itch" started to appear.
+
+This itch came from the feeling that *"I'm creating this piece of content to help people, but it is not ready yet, and what I've got so far is just sitting in my computer without helping anybody"*. So I tried to find a middle ground where I could publish some of the content that is ready and help people squash their doubts about Git.
+
+So I started to think about how I could make this happen. Around the same time was trying to learn to draw and to do lettering on the iPad, side note: I have to many hobbies. I also follow [Chris Albon](https://twitter.com/chrisalbon) and [Julia Evans](https://twitter.com/b0rk) — do follow both of them, they are great references — and about the same time I was thinking about these things I saw one of the [Machine Learning Flashcard](https://machinelearningflashcards.com) and another [Zine](https://wizardzines.com), and a lightbulb went on, maybe I could do something like that only about Git. And then the work began.
 
 ### How each card is made?
 
-Coming soon in English.
+So yes each card is drawn manually. Yes, you read that right, drawn. Let me explain a little better.
+
+For each card I follow the same set of steps:
+
+1. *Choosing a command:* I chose which command I want to approach some times based on the questions I make or receive on Twitter, or even yet, I take note of some command I used during the week and that I thought was cool;
+2. *Content planning:* Then I write the draft of the content that goes into the card on my notes app. These drafts contain everything that goes into a card: the title, the command, and the descriptions of each part of the command. I usually write it in Portuguese and then I adapt it into English;
+3. *Card creation:* Only when I have all the information I want to put into a card I draw the card. I use Procreate as my drawing app, I draw the command then I write the notes describing each part of the command then the titles and I export the image in both languages.
+
+Here's what a timelapse of a card being made looks like:
+
+![Card 46 timelapse](https://res.cloudinary.com/jesstemporal/video/upload/v1645974330/dev-diaries/046_cckst9.mp4)
+
+With all of that done, we have a card in our hands. To finalize the whole process I create each card blog post and publish it.
