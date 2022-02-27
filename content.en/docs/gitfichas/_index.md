@@ -26,7 +26,11 @@ I try my best to separate the activities I need to make and the adjustments so t
 
 ### How was GitFichas born
 
-Coming soon in English.
+I'm preparing some longer content about Git that I'm not ready to share yet, since it is longer it requires more time of me to prepare, review and publish it. Out of this need for more preparation time a "itch" started to appear.
+
+This itch came from the feeling that *"I'm creating this piece of content to help people, but it is not ready yet, and what I've got so far is just sitting in my computer without helping anybody"*. So I tried to find a middle ground where I could publish some of the content that is ready and help people squash their doubts about Git.
+
+So I started to think about how I could make this happen. Around the same time was trying to learn to draw and to do lettering on the iPad, side note: I have to many hobbies. I also follow [Chris Albon](https://twitter.com/chrisalbon) and [Julia Evans](https://twitter.com/b0rk) — do follow both of them, they are great references — and about the same time I was thinking about these things I saw one of the [Machine Learning Flashcard](https://machinelearningflashcards.com) and another [Zine](https://wizardzines.com), and a lightbulb went on, maybe I could do something like that only about Git. And then the work began.
 
 ### How each card is made?
 
