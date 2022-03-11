@@ -17,7 +17,20 @@ Today the scheduling of cards no longer holds true, but I'm still not ready to m
 
 ## I'm using Netlify
 
-Coming soon in English.
+A part from the visibility of the project, I also ended up using GitFichas to finally learn how to use [Netlify](https://www.netlify.com). This service integrates with GitHub in such a beautiful way that its configuration was suuuuper intuitive:
+
+1. created my account;
+2. associated both by GitHub and Netlify accounts;
+3. gave access to Netlify to find *only* GitFichas' repository (this impressed me, I'll talk about that in a bit);
+4. waited the first build to happen (the first one is always the longest), and poof, everything ready.
+
+I thought it was going to be more complex to be honest, and maybe it is, if the site config were more complex or if you were going to use Netlify to do more things than just building the site. Since the site is served through GitHub I didn't need to do *anything else*.
+
+After that, each new pull request, Netlify's bot appears and displays the following message:
+
+![Netlify message in a open pull request](https://res.cloudinary.com/jesstemporal/image/upload/v1645814794/dev-diaries/netlify-message-on-pull-request_hgext1.png)
+
+This message is update for each new commit that is pushed to GitHub. For me, that sometimes adjust things on the site from an iPad (which I have no development environment), the ability to preview the changes without running it locally is very helpful.
 
 ## Acesso to one specific repository
 
