@@ -1,0 +1,178 @@
+<!doctype html><html lang=pt dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="One nice day like many others, after creating quite a few repeated files I asked myself (and twitter):
+Can I use jinja to automate markdown file creation? pic.twitter.com/4bYOiuGQSo
+&mdash; Jessica Temporal (@jesstemporal) July 24, 2021  This test became autogenfiles.
+Where did the necessity rise from #  Coming soon in English.
+Configuring and using Autogenfiles on GitFichas #  Coming soon in English.
+Folder structure and variables file #  Coming soon in English.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Criação do autogenfiles">
+<meta property="og:description" content="One nice day like many others, after creating quite a few repeated files I asked myself (and twitter):
+Can I use jinja to automate markdown file creation? pic.twitter.com/4bYOiuGQSo
+&mdash; Jessica Temporal (@jesstemporal) July 24, 2021  This test became autogenfiles.
+Where did the necessity rise from #  Coming soon in English.
+Configuring and using Autogenfiles on GitFichas #  Coming soon in English.
+Folder structure and variables file #  Coming soon in English.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jtemporal.com/dev-diaries/docs/gitfichas/criacao-autogenfiles/"><meta property="article:section" content="docs">
+<title>Criação do autogenfiles | Dev Diaries</title>
+<link rel=manifest href=/dev-diaries/manifest.json>
+<link rel=icon href=/dev-diaries/favicon.png type=image/x-icon>
+<link rel=alternate hreflang=pt href=https://jtemporal.com/dev-diaries/pt/docs/gitfichas/criacao-autogenfiles/ title="Criação do autogenfiles">
+<link rel=stylesheet href=/dev-diaries/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/dev-diaries/flexsearch.min.js></script>
+<script defer src=/dev-diaries/en.search.min.dc5bf495885795d04cbef846311daf8ee2280b6281121bcbd69d385c8859e251.js integrity="sha256-3Fv0lYhXldBMvvhGMR2vjuIoC2KBEhvL1p04XIhZ4lE=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/dev-diaries/><span>Dev Diaries</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/dev-diaries/svg/translate.svg class=book-icon alt=Languages>
+English
+</a>
+</label>
+<ul>
+<li>
+<a href=https://jtemporal.com/dev-diaries/pt/docs/gitfichas/criacao-autogenfiles/>
+Português
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=/dev-diaries/docs/gitfichas/>GitFichas Development</a>
+<ul>
+<li>
+<a href=/dev-diaries/docs/gitfichas/escolha-de-um-tema/>Choosing a theme</a>
+</li>
+<li>
+<a href=/dev-diaries/docs/gitfichas/colocando-no-ar/>Getting it online</a>
+</li>
+<li>
+<a href=/dev-diaries/docs/gitfichas/criacao-autogenfiles/ class=active>Criação do autogenfiles</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://jtemporal.com/ target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://gitfichas.com/ target=_blank rel=noopener>
+GitFichas
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/dev-diaries/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Criação do autogenfiles</strong>
+<label for=toc-control>
+<img src=/dev-diaries/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#where-did-the-necessity-rise-from>Where did the necessity rise from</a></li>
+<li><a href=#configuring-and-using-autogenfiles-on-gitfichas>Configuring and using Autogenfiles on GitFichas</a>
+<ul>
+<li><a href=#folder-structure-and-variables-file>Folder structure and variables file</a></li>
+<li><a href=#templates>Templates</a></li>
+<li><a href=#creating-all-files-with-only-just-one-command>Creating all files with only just one command</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><p>One nice day like many others, after creating quite a few repeated files I asked myself (and twitter):</p>
+<blockquote class=twitter-tweet><p lang=en dir=ltr>Can I use jinja to automate markdown file creation? <a href=https://t.co/4bYOiuGQSo>pic.twitter.com/4bYOiuGQSo</a></p>&mdash; Jessica Temporal (@jesstemporal) <a href="https://twitter.com/jesstemporal/status/1418894698589138948?ref_src=twsrc%5Etfw">July 24, 2021</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+<p>This test became <a href="http://jtemporal.com/autogenfiles?utm_source=devdiaries">autogenfiles</a>.</p>
+<h2 id=where-did-the-necessity-rise-from>
+Where did the necessity rise from
+<a class=anchor href=#where-did-the-necessity-rise-from>#</a>
+</h2>
+<p>Coming soon in English.</p>
+<h2 id=configuring-and-using-autogenfiles-on-gitfichas>
+Configuring and using Autogenfiles on GitFichas
+<a class=anchor href=#configuring-and-using-autogenfiles-on-gitfichas>#</a>
+</h2>
+<p>Coming soon in English.</p>
+<h3 id=folder-structure-and-variables-file>
+Folder structure and variables file
+<a class=anchor href=#folder-structure-and-variables-file>#</a>
+</h3>
+<p>Coming soon in English.</p>
+<h3 id=templates>
+Templates
+<a class=anchor href=#templates>#</a>
+</h3>
+<p>Coming soon in English.</p>
+<h3 id=creating-all-files-with-only-just-one-command>
+Creating all files with only just one command
+<a class=anchor href=#creating-all-files-with-only-just-one-command>#</a>
+</h3>
+<p>Coming soon in English.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#where-did-the-necessity-rise-from>Where did the necessity rise from</a></li>
+<li><a href=#configuring-and-using-autogenfiles-on-gitfichas>Configuring and using Autogenfiles on GitFichas</a>
+<ul>
+<li><a href=#folder-structure-and-variables-file>Folder structure and variables file</a></li>
+<li><a href=#templates>Templates</a></li>
+<li><a href=#creating-all-files-with-only-just-one-command>Creating all files with only just one command</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

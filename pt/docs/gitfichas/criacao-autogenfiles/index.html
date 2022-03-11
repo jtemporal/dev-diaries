@@ -1,0 +1,222 @@
+<!doctype html><html lang=pt dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Um belo dia, depois de criar alguns arquivos repetidos eu me perguntei:
+Can I use jinja to automate markdown file creation? pic.twitter.com/4bYOiuGQSo
+&mdash; Jessica Temporal (@jesstemporal) July 24, 2021  Tradução: será se dá pra usar jinja para automatizar geração de arquivos markdown? e aí eu decidi fazer um teste. Esse teste virou o autogenfiles.
+De onde surgiu a necessidade #  O tema de portfólio que eu escolhi tem uma particularidade: a listagem de projetos não é a coleção de artigos, e sim de um Jekyll Collection, essa mesma estrutura é a que eu uso para listar projetos para o hacktoberfest na lista anual de projetos brasileiros.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Criação do autogenfiles">
+<meta property="og:description" content="Um belo dia, depois de criar alguns arquivos repetidos eu me perguntei:
+Can I use jinja to automate markdown file creation? pic.twitter.com/4bYOiuGQSo
+&mdash; Jessica Temporal (@jesstemporal) July 24, 2021  Tradução: será se dá pra usar jinja para automatizar geração de arquivos markdown? e aí eu decidi fazer um teste. Esse teste virou o autogenfiles.
+De onde surgiu a necessidade #  O tema de portfólio que eu escolhi tem uma particularidade: a listagem de projetos não é a coleção de artigos, e sim de um Jekyll Collection, essa mesma estrutura é a que eu uso para listar projetos para o hacktoberfest na lista anual de projetos brasileiros.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jtemporal.com/dev-diaries/pt/docs/gitfichas/criacao-autogenfiles/"><meta property="article:section" content="docs">
+<title>Criação do autogenfiles | Dev Diaries</title>
+<link rel=manifest href=/dev-diaries/manifest.json>
+<link rel=icon href=/dev-diaries/favicon.png type=image/x-icon>
+<link rel=alternate hreflang=pt href=https://jtemporal.com/dev-diaries/docs/gitfichas/criacao-autogenfiles/ title="Criação do autogenfiles">
+<link rel=stylesheet href=/dev-diaries/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
+<script defer src=/dev-diaries/flexsearch.min.js></script>
+<script defer src=/dev-diaries/pt.search.min.983634da05c8ea1d1ed8af01492ec6c9bd3cb8072594c8447f8892cc5bafb40b.js integrity="sha256-mDY02gXI6h0e2K8BSS7Gyb08uAcllMhEf4iSzFuvtAs=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/dev-diaries/pt/><span>Dev Diaries</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Buscar aria-label=Buscar maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/dev-diaries/svg/translate.svg class=book-icon alt=Languages>
+Português
+</a>
+</label>
+<ul>
+<li>
+<a href=https://jtemporal.com/dev-diaries/docs/gitfichas/criacao-autogenfiles/>
+English
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=/dev-diaries/pt/docs/gitfichas/>Desenvolvimento do GitFichas</a>
+<ul>
+<li>
+<a href=/dev-diaries/pt/docs/gitfichas/escolha-de-um-tema/>Escolha de um tema</a>
+</li>
+<li>
+<a href=/dev-diaries/pt/docs/gitfichas/colocando-no-ar/>Colocando no ar</a>
+</li>
+<li>
+<a href=/dev-diaries/pt/docs/gitfichas/criacao-autogenfiles/ class=active>Criação do autogenfiles</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://jtemporal.com/ target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://gitfichas.com/ target=_blank rel=noopener>
+GitFichas
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/dev-diaries/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Criação do autogenfiles</strong>
+<label for=toc-control>
+<img src=/dev-diaries/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#de-onde-surgiu-a-necessidade>De onde surgiu a necessidade</a></li>
+<li><a href=#configuração-e-uso-no-gitfichas>Configuração e uso no GitFichas</a>
+<ul>
+<li><a href=#estrutura-de-pastas-e-arquivo-de-variáveis>Estrutura de pastas e arquivo de variáveis</a></li>
+<li><a href=#templates>Templates</a></li>
+<li><a href=#criando-todos-arquivos-com-apenas-um-comando>Criando todos arquivos com apenas um comando</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</aside>
+</header>
+<article class=markdown><p>Um belo dia, depois de criar alguns arquivos repetidos eu me perguntei:</p>
+<blockquote class=twitter-tweet><p lang=en dir=ltr>Can I use jinja to automate markdown file creation? <a href=https://t.co/4bYOiuGQSo>pic.twitter.com/4bYOiuGQSo</a></p>&mdash; Jessica Temporal (@jesstemporal) <a href="https://twitter.com/jesstemporal/status/1418894698589138948?ref_src=twsrc%5Etfw">July 24, 2021</a></blockquote>
+<script async src=https://platform.twitter.com/widgets.js></script>
+<p>Tradução: <em>será se dá pra usar jinja para automatizar geração de arquivos markdown?</em> e aí eu decidi fazer um teste. Esse teste virou o <a href=http://jtemporal.com/autogenfiles/>autogenfiles</a>.</p>
+<h2 id=de-onde-surgiu-a-necessidade>
+De onde surgiu a necessidade
+<a class=anchor href=#de-onde-surgiu-a-necessidade>#</a>
+</h2>
+<p>O <a href=https://lenpaul.github.io/portfolio-jekyll-theme/>tema de portfólio</a> que eu escolhi tem uma particularidade: a listagem de projetos não é a coleção de artigos, e sim de um <a href=https://jekyllrb.com/docs/collections/>Jekyll Collection</a>, essa mesma estrutura é a que eu uso para listar projetos para o hacktoberfest na lista anual de projetos brasileiros.</p>
+<p>Por causa da particularidade desse tema, e por causa de como o Jekyll funciona, toda vez que eu criava uma ficha nova, eu precisava criar um novo arquivo markdown dentro de três pastas:</p>
+<ul>
+<li><code>projects</code></li>
+<li><code>_projects</code></li>
+<li><code>_posts</code></li>
+</ul>
+<p>Eu confesso não entender muito bem a relação das três pastas e a listagem, mas fazendo os testes localmente eu identifiquei a necessidade criar esses arquivos.</p>
+<h2 id=configuração-e-uso-no-gitfichas>
+Configuração e uso no GitFichas
+<a class=anchor href=#configura%c3%a7%c3%a3o-e-uso-no-gitfichas>#</a>
+</h2>
+<p>O <a href=http://jtemporal.com/autogenfiles/>autogenfiles</a> é feito para ser simples.</p>
+<h3 id=estrutura-de-pastas-e-arquivo-de-variáveis>
+Estrutura de pastas e arquivo de variáveis
+<a class=anchor href=#estrutura-de-pastas-e-arquivo-de-vari%c3%a1veis>#</a>
+</h3>
+<p>Você precisa de uma pasta de templates que vai armazenar os templates que você precisa com a mesma estrutura de pastas do seu projeto. Nesse caso, eu precisei de três pastas e cada pasta precisou de um arquivo, a estrutura ficou assim:</p>
+<pre tabindex=0><code>templates
+├── _posts
+│   └── {{ date }}-{{ ficha }}.md
+├── _projects
+│   └── {{ ficha }}.md
+└── projects
+    └── {{ ficha }}.md
+
+3 directories, 3 files
+</code></pre><p>Além da estrutura dos templates, precisei de um arquivo chamado <code>variables.yml</code> para anotar os valores a serem preenchidos em cada template.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>[<span style=color:#ae81ff>variables]</span>
+<span style=color:#ae81ff>ficha = 018</span>
+<span style=color:#ae81ff>date = 2021-09-08</span>
+<span style=color:#ae81ff>desc = git clone url</span>
+<span style=color:#ae81ff>alt = O comando git clone ... na cloud.</span>
+</code></pre></div><h3 id=templates>
+Templates
+<a class=anchor href=#templates>#</a>
+</h3>
+<p>Os templates até aqui eram o mais simples possível. A seguir você pode ver com o que eles se parecem.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
+<span style=color:#f92672>layout</span>: <span style=color:#ae81ff>post</span>
+<span style=color:#f92672>title</span>: <span style=color:#e6db74>&#39;#{{ ficha }} {{ desc }}&#39;</span>
+<span style=color:#f92672>image</span>: <span style=color:#e6db74>&#34;/assets/img/projects/{{ ficha }}/thumbnail.jpg&#34;</span>
+---
+
+<span style=color:#ae81ff>&lt;img  alt=&#34;{{ alt }}&#34; src=&#34;/assets/img/projects/{{ ficha }}/full.jpg&#34;&gt;</span>
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
+<span style=color:#f92672>layout</span>: <span style=color:#ae81ff>post</span>
+<span style=color:#f92672>title</span>: <span style=color:#e6db74>&#39;#{{ ficha }} {{ desc }}&#39;</span>
+<span style=color:#f92672>image</span>: <span style=color:#e6db74>&#34;/assets/img/projects/{{ ficha }}/thumbnail.jpg&#34;</span>
+---
+
+<span style=color:#ae81ff>&lt;img alt=&#34;{{ alt }}&#34; src=&#34;/assets/img/projects/{{ ficha }}/full.jpg&#34;&gt;</span>
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
+<span style=color:#f92672>layout</span>: <span style=color:#ae81ff>post</span>
+<span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;#{{ ficha }}&#34;</span>
+<span style=color:#f92672>permalink</span>: <span style=color:#ae81ff>/{{ ficha }}</span>
+<span style=color:#f92672>image</span>: <span style=color:#e6db74>&#34;/assets/img/projects/{{ ficha }}&#34;</span>
+<span style=color:#f92672>redirect_to</span>:
+  - <span style=color:#ae81ff>https://gitfichas.com/projects/{{ ficha }}</span>
+---
+
+<span style=color:#ae81ff>Redirect for {{ ficha }}</span>
+</code></pre></div><h3 id=criando-todos-arquivos-com-apenas-um-comando>
+Criando todos arquivos com apenas um comando
+<a class=anchor href=#criando-todos-arquivos-com-apenas-um-comando>#</a>
+</h3>
+<p>Depois de criar essa estrutura, era só executar o comando <code>autogenfiles</code> que os arquivos foram “automaticamente” gerados sem eu precisar editar cada um deles.</p>
+<p>Então para cada nova ficha, eu passei a editar apenas um arquivo reduzindo os meus erros.</p>
+<p>PS.: pode ser que eu escreva sobre a implementação do <a href=http://jtemporal.com/autogenfiles/>autogenfiles</a>, mas se você quiser <a href=https://github.com/jtemporal/autogenfiles>espiar o código basta clicar aqui</a>.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#de-onde-surgiu-a-necessidade>De onde surgiu a necessidade</a></li>
+<li><a href=#configuração-e-uso-no-gitfichas>Configuração e uso no GitFichas</a>
+<ul>
+<li><a href=#estrutura-de-pastas-e-arquivo-de-variáveis>Estrutura de pastas e arquivo de variáveis</a></li>
+<li><a href=#templates>Templates</a></li>
+<li><a href=#criando-todos-arquivos-com-apenas-um-comando>Criando todos arquivos com apenas um comando</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
