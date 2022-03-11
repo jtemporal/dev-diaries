@@ -28,7 +28,29 @@ I confess to not understand the inner works of how the folders connected to the 
 
 ### Folder structure and variables file
 
-Coming soon in English.
+You need a templates folder to create the templates in, and that folder must follow the same folder structure of your project. In this case, I needed 3 folders and each folder contained a file. The template folder structure ended up looking like this:
+
+```
+templates
+├── _posts
+│   └── {{ date }}-{{ ficha }}.md
+├── _projects
+│   └── {{ ficha }}.md
+└── projects
+    └── {{ ficha }}.md
+
+3 directories, 3 files
+```
+
+After the templates structure I also needed a file called `variables.yml` to take note of the values to be filled on each template. Note it is in Portuguese since up to this point the project had no intention of being localized to English:
+
+```yaml
+[variables]
+ficha = 018
+date = 2021-09-08
+desc = git clone url
+alt = O comando git clone ... na cloud.
+```
 
 ### Templates
 
