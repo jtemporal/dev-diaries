@@ -55,4 +55,4 @@ This redirect I make directly on Namecheap nothing further required. It is very 
 
 ## Official announcement
 
-Coming soon in English.
+With the site live, and the first cards published I did what I love to do and [wrote a blog post to tell everyone that the project was born, and you can find the version of it in English here](https://jtemporal.com/introducing-gitfichas/?utm_source=devdiaries). Basically it tells what the project is about, like showing what a git study card looks like, and with it, people that follow my work could know what to expect.
