@@ -32,9 +32,15 @@ After that, each new pull request, Netlify's bot appears and displays the follow
 
 This message is update for each new commit that is pushed to GitHub. For me, that sometimes adjust things on the site from an iPad (which I have no development environment), the ability to preview the changes without running it locally is very helpful.
 
-## Acesso to one specific repository
+## Access to one specific repository
 
-Coming soon in English.
+Getting back to the feature that impressed me: access to find *only one* repository.
+
+At work, I use the same GitHub profile that I use for my personal projects. For this reason I tend to be 3 times more aware of what services I give access to my profile data on GitHub.
+
+The possibility to control to such specificity which repositories the services can access impressed me because usually you don't have such power.
+
+For example, Heroku - another service I use - can list all the repositories in my account, to be fair, Heroku doesn't have access to the organizations I'm a part of unless I request it but still, Netlify took that extra step.
 
 ## Domain
 
