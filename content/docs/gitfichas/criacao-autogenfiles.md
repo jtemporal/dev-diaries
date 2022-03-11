@@ -20,7 +20,7 @@ Por causa da particularidade desse tema, e por causa de como o Jekyll funciona, 
 - `_projects`
 - `_posts`
 
-Eu confesso não entender muito bem a relação das três pastas e a listagem, mas fazendo os testes localmente eu identifiquei a necessidade criar esses arquivos. 
+Eu confesso não entender muito bem a relação das três pastas e a listagem, mas fazendo os testes localmente eu identifiquei a necessidade criar esses arquivos.
 
 ## Configuração e uso no GitFichas
 
