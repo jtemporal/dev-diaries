@@ -42,7 +42,7 @@ templates
 3 directories, 3 files
 ```
 
- Além da estrutura dos templates, precisei de um arquivo chamado `variables.yml` para anotar os valores a serem preenchidos em cada template.
+Além da estrutura dos templates, precisei de um arquivo chamado `variables.yml` para anotar os valores a serem preenchidos em cada template.
 
 ```yaml
 [variables]
