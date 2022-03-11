@@ -16,7 +16,7 @@ The project is private #  To start, GitFichas is private project, by that I mean
 <link rel=alternate hreflang=pt href=https://jtemporal.com/dev-diaries/pt/docs/gitfichas/colocando-no-ar/ title="Colocando no ar">
 <link rel=stylesheet href=/dev-diaries/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
 <script defer src=/dev-diaries/flexsearch.min.js></script>
-<script defer src=/dev-diaries/en.search.min.bf4b1ba1f900d0e574080882856da31ded4f1cdea9812b1f4141a0f883e9519d.js integrity="sha256-v0sbofkA0OV0CAiChW2jHe1PHN6pgSsfQUGg+IPpUZ0=" crossorigin=anonymous></script>
+<script defer src=/dev-diaries/en.search.min.04a2234fe9f2904e5eeb5b63fc5ad7fa9c925a5f2ae7638f9f5ad85d18160624.js integrity="sha256-BKIjT+nykE5e61tj/FrX+pySWl8q52OPn1rYXRgWBiQ=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -97,9 +97,9 @@ GitFichas
 <ul>
 <li><a href=#the-project-is-private>The project is private</a></li>
 <li><a href=#im-using-netlify>I&rsquo;m using Netlify</a></li>
-<li><a href=#acesso-to-one-specific-repository>Acesso to one specific repository</a></li>
+<li><a href=#access-to-one-specific-repository>Access to one specific repository</a></li>
 <li><a href=#domain>Domain</a></li>
-<li><a href=#oficial-announcement>Oficial announcement</a></li>
+<li><a href=#official-announcement>Official announcement</a></li>
 </ul>
 </nav>
 </aside>
@@ -120,22 +120,41 @@ The project is private
 I&rsquo;m using Netlify
 <a class=anchor href=#im-using-netlify>#</a>
 </h2>
-<p>Coming soon in English.</p>
-<h2 id=acesso-to-one-specific-repository>
-Acesso to one specific repository
-<a class=anchor href=#acesso-to-one-specific-repository>#</a>
+<p>A part from the visibility of the project, I also ended up using GitFichas to finally learn how to use <a href=https://www.netlify.com>Netlify</a>. This service integrates with GitHub in such a beautiful way that its configuration was suuuuper intuitive:</p>
+<ol>
+<li>created my account;</li>
+<li>associated both by GitHub and Netlify accounts;</li>
+<li>gave access to Netlify to find <em>only</em> GitFichas' repository (this impressed me, I&rsquo;ll talk about that in a bit);</li>
+<li>waited the first build to happen (the first one is always the longest), and poof, everything ready.</li>
+</ol>
+<p>I thought it was going to be more complex to be honest, and maybe it is, if the site config were more complex or if you were going to use Netlify to do more things than just building the site. Since the site is served through GitHub I didn&rsquo;t need to do <em>anything else</em>.</p>
+<p>After that, each new pull request, Netlify&rsquo;s bot appears and displays the following message:</p>
+<p><img src=https://res.cloudinary.com/jesstemporal/image/upload/v1645814794/dev-diaries/netlify-message-on-pull-request_hgext1.png alt="Netlify message in a open pull request"></p>
+<p>This message is update for each new commit that is pushed to GitHub. For me, that sometimes adjust things on the site from an iPad (which I have no development environment), the ability to preview the changes without running it locally is very helpful.</p>
+<h2 id=access-to-one-specific-repository>
+Access to one specific repository
+<a class=anchor href=#access-to-one-specific-repository>#</a>
 </h2>
-<p>Coming soon in English.</p>
+<p>Getting back to the feature that impressed me: access to find <em>only one</em> repository.</p>
+<p>At work, I use the same GitHub profile that I use for my personal projects. For this reason I tend to be 3 times more aware of what services I give access to my profile data on GitHub.</p>
+<p>The possibility to control to such specificity which repositories the services can access impressed me because usually you don&rsquo;t have such power.</p>
+<p>For example, Heroku - another service I use - can list all the repositories in my account, to be fair, Heroku doesn&rsquo;t have access to the organizations I&rsquo;m a part of unless I request it but still, Netlify took that extra step.</p>
 <h2 id=domain>
 Domain
 <a class=anchor href=#domain>#</a>
 </h2>
-<p>Coming soon in English.</p>
-<h2 id=oficial-announcement>
-Oficial announcement
-<a class=anchor href=#oficial-announcement>#</a>
+<p>To finalize the publishing step I bought a new domain on Namecheap and configured it on GitHub.</p>
+<p>I usually buy and manage my domains through Namecheap, I think it is easy to use and set up. For example, GitFichas actually has two domains:</p>
+<ul>
+<li><a href="https://gitfichas.com/?utm_source=devdiaries">https://gitfichas.com</a> that shows the main page in Portuguese;</li>
+<li><a href="http://gitstudycards.com/?utm_source=devdiaries">https://gitstudycards.com</a> that redirects to the page in English.</li>
+</ul>
+<p>This redirect I make directly on Namecheap nothing further required. It is very practical in my opinion.</p>
+<h2 id=official-announcement>
+Official announcement
+<a class=anchor href=#official-announcement>#</a>
 </h2>
-<p>Coming soon in English.</p>
+<p>With the site live, and the first cards published I did what I love to do and <a href="https://jtemporal.com/introducing-gitfichas/?utm_source=devdiaries">wrote a blog post to tell everyone that the project was born, and you can find the version of it in English here</a>. Basically it tells what the project is about, like showing what a git study card looks like, and with it, people that follow my work could know what to expect.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
@@ -152,9 +171,9 @@ Oficial announcement
 <ul>
 <li><a href=#the-project-is-private>The project is private</a></li>
 <li><a href=#im-using-netlify>I&rsquo;m using Netlify</a></li>
-<li><a href=#acesso-to-one-specific-repository>Acesso to one specific repository</a></li>
+<li><a href=#access-to-one-specific-repository>Access to one specific repository</a></li>
 <li><a href=#domain>Domain</a></li>
-<li><a href=#oficial-announcement>Oficial announcement</a></li>
+<li><a href=#official-announcement>Official announcement</a></li>
 </ul>
 </nav>
 </div>
