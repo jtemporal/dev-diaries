@@ -17,16 +17,42 @@ Today the scheduling of cards no longer holds true, but I'm still not ready to m
 
 ## I'm using Netlify
 
-Coming soon in English.
+A part from the visibility of the project, I also ended up using GitFichas to finally learn how to use [Netlify](https://www.netlify.com). This service integrates with GitHub in such a beautiful way that its configuration was suuuuper intuitive:
 
-## Acesso to one specific repository
+1. created my account;
+2. associated both by GitHub and Netlify accounts;
+3. gave access to Netlify to find *only* GitFichas' repository (this impressed me, I'll talk about that in a bit);
+4. waited the first build to happen (the first one is always the longest), and poof, everything ready.
 
-Coming soon in English.
+I thought it was going to be more complex to be honest, and maybe it is, if the site config were more complex or if you were going to use Netlify to do more things than just building the site. Since the site is served through GitHub I didn't need to do *anything else*.
+
+After that, each new pull request, Netlify's bot appears and displays the following message:
+
+![Netlify message in a open pull request](https://res.cloudinary.com/jesstemporal/image/upload/v1645814794/dev-diaries/netlify-message-on-pull-request_hgext1.png)
+
+This message is update for each new commit that is pushed to GitHub. For me, that sometimes adjust things on the site from an iPad (which I have no development environment), the ability to preview the changes without running it locally is very helpful.
+
+## Access to one specific repository
+
+Getting back to the feature that impressed me: access to find *only one* repository.
+
+At work, I use the same GitHub profile that I use for my personal projects. For this reason I tend to be 3 times more aware of what services I give access to my profile data on GitHub.
+
+The possibility to control to such specificity which repositories the services can access impressed me because usually you don't have such power.
+
+For example, Heroku - another service I use - can list all the repositories in my account, to be fair, Heroku doesn't have access to the organizations I'm a part of unless I request it but still, Netlify took that extra step.
 
 ## Domain
 
-Coming soon in English.
+To finalize the publishing step I bought a new domain on Namecheap and configured it on GitHub.
 
-## Oficial announcement
+I usually buy and manage my domains through Namecheap, I think it is easy to use and set up. For example, GitFichas actually has two domains:
 
-Coming soon in English.
+- [https://gitfichas.com](https://gitfichas.com/?utm_source=devdiaries) that shows the main page in Portuguese;
+- [https://gitstudycards.com](http://gitstudycards.com/?utm_source=devdiaries) that redirects to the page in English.
+
+This redirect I make directly on Namecheap nothing further required. It is very practical in my opinion.
+
+## Official announcement
+
+With the site live, and the first cards published I did what I love to do and [wrote a blog post to tell everyone that the project was born, and you can find the version of it in English here](https://jtemporal.com/introducing-gitfichas/?utm_source=devdiaries). Basically it tells what the project is about, like showing what a git study card looks like, and with it, people that follow my work could know what to expect.
