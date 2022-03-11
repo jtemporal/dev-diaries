@@ -54,7 +54,40 @@ alt = O comando git clone ... na cloud.
 
 ### Templates
 
-Coming soon in English.
+The templates so far were supposed to be as simple as possible. I copied them below:
+
+```yaml
+---
+layout: post
+title: '#{{ ficha }} {{ desc }}'
+image: "/assets/img/projects/{{ ficha }}/thumbnail.jpg"
+---
+
+<img  alt="{{ alt }}" src="/assets/img/projects/{{ ficha }}/full.jpg">
+```
+
+```yaml
+---
+layout: post
+title: '#{{ ficha }} {{ desc }}'
+image: "/assets/img/projects/{{ ficha }}/thumbnail.jpg"
+---
+
+<img alt="{{ alt }}" src="/assets/img/projects/{{ ficha }}/full.jpg">
+```
+
+```yaml
+---
+layout: post
+title: "#{{ ficha }}"
+permalink: /{{ ficha }}
+image: "/assets/img/projects/{{ ficha }}"
+redirect_to:
+  - https://gitfichas.com/projects/{{ ficha }}
+---
+
+Redirect for {{ ficha }}
+```
 
 ### Creating all files with only just one command
 
