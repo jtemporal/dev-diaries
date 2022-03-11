@@ -5,17 +5,13 @@
 <meta name=description content="One nice day like many others, after creating quite a few repeated files I asked myself (and twitter):
 Can I use jinja to automate markdown file creation? pic.twitter.com/4bYOiuGQSo
 &mdash; Jessica Temporal (@jesstemporal) July 24, 2021  This test became autogenfiles.
-Where did the necessity rise from #  Coming soon in English.
-Configuring and using Autogenfiles on GitFichas #  Coming soon in English.
-Folder structure and variables file #  Coming soon in English.">
+Where did the necessity rise from #  The portfólio theme I chose has a particularity: the way you list projects isn&rsquo;t through a collection of posts, and by a Jekyll Collection, by the way this is the same structure I use for listing Brazilians projects to contribute to for the annual hacktoberfest list I curate every year.">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Creating Autogenfiles">
 <meta property="og:description" content="One nice day like many others, after creating quite a few repeated files I asked myself (and twitter):
 Can I use jinja to automate markdown file creation? pic.twitter.com/4bYOiuGQSo
 &mdash; Jessica Temporal (@jesstemporal) July 24, 2021  This test became autogenfiles.
-Where did the necessity rise from #  Coming soon in English.
-Configuring and using Autogenfiles on GitFichas #  Coming soon in English.
-Folder structure and variables file #  Coming soon in English.">
+Where did the necessity rise from #  The portfólio theme I chose has a particularity: the way you list projects isn&rsquo;t through a collection of posts, and by a Jekyll Collection, by the way this is the same structure I use for listing Brazilians projects to contribute to for the annual hacktoberfest list I curate every year.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://jtemporal.com/dev-diaries/docs/gitfichas/criacao-autogenfiles/"><meta property="article:section" content="docs">
 <title>Creating Autogenfiles | Dev Diaries</title>
@@ -24,7 +20,7 @@ Folder structure and variables file #  Coming soon in English.">
 <link rel=alternate hreflang=pt href=https://jtemporal.com/dev-diaries/pt/docs/gitfichas/criacao-autogenfiles/ title="Criação do autogenfiles">
 <link rel=stylesheet href=/dev-diaries/book.min.82c5dbd23447cee0b4c2aa3ed08ce0961faa40e1fa370eee4f8c9f02e0d46b5f.css integrity="sha256-gsXb0jRHzuC0wqo+0Izglh+qQOH6Nw7uT4yfAuDUa18=" crossorigin=anonymous>
 <script defer src=/dev-diaries/flexsearch.min.js></script>
-<script defer src=/dev-diaries/en.search.min.fcc3e12c9ee9908ac36a054ccbaaa625738b9ead157b080a1afd992ae0b64353.js integrity="sha256-/MPhLJ7pkIrDagVMy6qmJXOLnq0VewgKGv2ZKuC2Q1M=" crossorigin=anonymous></script>
+<script defer src=/dev-diaries/en.search.min.379a72795136c923c11f07a0efa51b94a5a3328afb262c9944a703b7322c5683.js integrity="sha256-N5pyeVE2ySPBHweg76UblKWjMor7JiyZRKcDtzIsVoM=" crossorigin=anonymous></script>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -126,27 +122,75 @@ GitFichas
 Where did the necessity rise from
 <a class=anchor href=#where-did-the-necessity-rise-from>#</a>
 </h2>
-<p>Coming soon in English.</p>
+<p>The <a href=https://lenpaul.github.io/portfolio-jekyll-theme/>portfólio theme</a> I chose has a particularity: the way you list projects isn&rsquo;t through a collection of posts, and by a <a href=https://jekyllrb.com/docs/collections/>Jekyll Collection</a>, by the way this is the same structure I use for listing Brazilians projects to contribute to for the annual hacktoberfest list I curate every year.</p>
+<p>Because of such particularity and because of how Jekyll works, every time I created a new card, I&rsquo;d need to create a new file inside of 3 different folders:</p>
+<ul>
+<li><code>projects</code></li>
+<li><code>_projects</code></li>
+<li><code>_posts</code></li>
+</ul>
+<p>I confess to not understand the inner works of how the folders connected to the listing, but building the website locally I identified the need for creating all the files.</p>
 <h2 id=configuring-and-using-autogenfiles-on-gitfichas>
 Configuring and using Autogenfiles on GitFichas
 <a class=anchor href=#configuring-and-using-autogenfiles-on-gitfichas>#</a>
 </h2>
-<p>Coming soon in English.</p>
+<p><a href="http://jtemporal.com/autogenfiles/?utm_source=devdiaries">Autogenfiles</a> is made to be simple.</p>
 <h3 id=folder-structure-and-variables-file>
 Folder structure and variables file
 <a class=anchor href=#folder-structure-and-variables-file>#</a>
 </h3>
-<p>Coming soon in English.</p>
-<h3 id=templates>
+<p>You need a templates folder to create the templates in, and that folder must follow the same folder structure of your project. In this case, I needed 3 folders and each folder contained a file. The template folder structure ended up looking like this:</p>
+<pre tabindex=0><code>templates
+├── _posts
+│   └── {{ date }}-{{ ficha }}.md
+├── _projects
+│   └── {{ ficha }}.md
+└── projects
+    └── {{ ficha }}.md
+
+3 directories, 3 files
+</code></pre><p>After the templates structure I also needed a file called <code>variables.yml</code> to take note of the values to be filled on each template. Note it is in Portuguese since up to this point the project had no intention of being localized to English:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>[<span style=color:#ae81ff>variables]</span>
+<span style=color:#ae81ff>ficha = 018</span>
+<span style=color:#ae81ff>date = 2021-09-08</span>
+<span style=color:#ae81ff>desc = git clone url</span>
+<span style=color:#ae81ff>alt = O comando git clone ... na cloud.</span>
+</code></pre></div><h3 id=templates>
 Templates
 <a class=anchor href=#templates>#</a>
 </h3>
-<p>Coming soon in English.</p>
-<h3 id=creating-all-files-with-only-just-one-command>
+<p>The templates so far were supposed to be as simple as possible. I copied them below:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
+<span style=color:#f92672>layout</span>: <span style=color:#ae81ff>post</span>
+<span style=color:#f92672>title</span>: <span style=color:#e6db74>&#39;#{{ ficha }} {{ desc }}&#39;</span>
+<span style=color:#f92672>image</span>: <span style=color:#e6db74>&#34;/assets/img/projects/{{ ficha }}/thumbnail.jpg&#34;</span>
+---
+
+<span style=color:#ae81ff>&lt;img  alt=&#34;{{ alt }}&#34; src=&#34;/assets/img/projects/{{ ficha }}/full.jpg&#34;&gt;</span>
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
+<span style=color:#f92672>layout</span>: <span style=color:#ae81ff>post</span>
+<span style=color:#f92672>title</span>: <span style=color:#e6db74>&#39;#{{ ficha }} {{ desc }}&#39;</span>
+<span style=color:#f92672>image</span>: <span style=color:#e6db74>&#34;/assets/img/projects/{{ ficha }}/thumbnail.jpg&#34;</span>
+---
+
+<span style=color:#ae81ff>&lt;img alt=&#34;{{ alt }}&#34; src=&#34;/assets/img/projects/{{ ficha }}/full.jpg&#34;&gt;</span>
+</code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
+<span style=color:#f92672>layout</span>: <span style=color:#ae81ff>post</span>
+<span style=color:#f92672>title</span>: <span style=color:#e6db74>&#34;#{{ ficha }}&#34;</span>
+<span style=color:#f92672>permalink</span>: <span style=color:#ae81ff>/{{ ficha }}</span>
+<span style=color:#f92672>image</span>: <span style=color:#e6db74>&#34;/assets/img/projects/{{ ficha }}&#34;</span>
+<span style=color:#f92672>redirect_to</span>:
+  - <span style=color:#ae81ff>https://gitfichas.com/projects/{{ ficha }}</span>
+---
+
+<span style=color:#ae81ff>Redirect for {{ ficha }}</span>
+</code></pre></div><h3 id=creating-all-files-with-only-just-one-command>
 Creating all files with only just one command
 <a class=anchor href=#creating-all-files-with-only-just-one-command>#</a>
 </h3>
-<p>Coming soon in English.</p>
+<p>After creating all of this structure I just needed to run the command <code>autogenfiles</code> that the files were “automagically” created without requiring me to lift a finger - other than to type the command that is.</p>
+<p>So for each new card, instead of 3 very similar files I ended up editing only one reducing the chance for mistakes.</p>
+<p>PS.: maybe I will write about implementing <a href="http://jtemporal.com/autogenfiles?utm_source=devdiaries">autogenfiles</a>, but for now you can <a href="https://github.com/jtemporal/autogenfiles?utm_source=devdiaries">take a sneak peak at the code by clicking here</a>.</p>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">

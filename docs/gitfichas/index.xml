@@ -4,6 +4,4 @@ I wanted to have the content online and as fast as possible; I also wanted to ha
 The project is private # To start, GitFichas is private project, by that I mean, the only person that has access to its source code is me.</description></item><item><title>Creating Autogenfiles</title><link>https://jtemporal.com/dev-diaries/docs/gitfichas/criacao-autogenfiles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jtemporal.com/dev-diaries/docs/gitfichas/criacao-autogenfiles/</guid><description>One nice day like many others, after creating quite a few repeated files I asked myself (and twitter):
 Can I use jinja to automate markdown file creation? pic.twitter.com/4bYOiuGQSo
 &amp;mdash; Jessica Temporal (@jesstemporal) July 24, 2021 This test became autogenfiles.
-Where did the necessity rise from # Coming soon in English.
-Configuring and using Autogenfiles on GitFichas # Coming soon in English.
-Folder structure and variables file # Coming soon in English.</description></item></channel></rss>
+Where did the necessity rise from # The portfólio theme I chose has a particularity: the way you list projects isn&amp;rsquo;t through a collection of posts, and by a Jekyll Collection, by the way this is the same structure I use for listing Brazilians projects to contribute to for the annual hacktoberfest list I curate every year.</description></item></channel></rss>
