@@ -24,7 +24,7 @@ I confess to not understand the inner works of how the folders connected to the 
 
 ## Configuring and using Autogenfiles on GitFichas
 
-Coming soon in English.
+[Autogenfiles](http://jtemporal.com/autogenfiles/?utm_source=devdiaries) is made to be simple.
 
 ### Folder structure and variables file
 
