@@ -1,7 +1,7 @@
 ---
 bookCollapseSection: false
 weight: 22
-title: "Criação do autogenfiles"
+title: "Creating Autogenfiles"
 ---
 
 One nice day like many others, after creating quite a few repeated files I asked myself (and twitter):
