@@ -53,6 +53,6 @@ I usually buy and manage my domains through Namecheap, I think it is easy to use
 
 This redirect I make directly on Namecheap nothing further required. It is very practical in my opinion.
 
-## Oficial announcement
+## Official announcement
 
 Coming soon in English.
