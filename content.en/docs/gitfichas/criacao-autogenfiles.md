@@ -91,4 +91,8 @@ Redirect for {{ ficha }}
 
 ### Creating all files with only just one command
 
-Coming soon in English.
+After creating all of this structure I just needed to run the command `autogenfiles` that the files were “automagically” created without requiring me to lift a finger - other than to type the command that is.
+
+So for each new card, instead of 3 very similar files I ended up editing only one reducing the chance for mistakes.
+
+PS.: maybe I will write about implementing [autogenfiles](http://jtemporal.com/autogenfiles?utm_source=devdiaries), but for now you can [take a sneak peak at the code by clicking here](https://github.com/jtemporal/autogenfiles?utm_source=devdiaries).
