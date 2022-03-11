@@ -44,7 +44,14 @@ For example, Heroku - another service I use - can list all the repositories in m
 
 ## Domain
 
-Coming soon in English.
+To finalize the publishing step I bought a new domain on Namecheap and configured it on GitHub.
+
+I usually buy and manage my domains through Namecheap, I think it is easy to use and set up. For example, GitFichas actually has two domains:
+
+- [https://gitfichas.com](https://gitfichas.com) that shows the main page in Portuguese;
+- [https://gitstudycards.com](http://gitstudycards.com) that redirects to the page in English.
+
+This redirect I make directly on Namecheap nothing further required. It is very practical in my opinion.
 
 ## Oficial announcement
 
