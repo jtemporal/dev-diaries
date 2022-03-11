@@ -20,7 +20,7 @@ Por causa da particularidade desse tema, e por causa de como o Jekyll funciona, 
 - `_projects`
 - `_posts`
 
-Eu confesso não entender muito bem a relação das três pastas e a listagem, mas fazendo os testes localmente eu identifiquei a necessidade criar esses arquivos. 
+Eu confesso não entender muito bem a relação das três pastas e a listagem, mas fazendo os testes localmente eu identifiquei a necessidade criar esses arquivos.
 
 ## Configuração e uso no GitFichas
 
@@ -42,7 +42,7 @@ templates
 3 directories, 3 files
 ```
 
- Além da estrutura dos templates, precisei de um arquivo chamado `variables.yml` para anotar os valores a serem preenchidos em cada template.
+Além da estrutura dos templates, precisei de um arquivo chamado `variables.yml` para anotar os valores a serem preenchidos em cada template.
 
 ```yaml
 [variables]
